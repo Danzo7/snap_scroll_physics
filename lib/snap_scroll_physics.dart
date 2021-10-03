@@ -118,7 +118,7 @@ abstract class BaseSnapScrollPhysics extends ScrollPhysics
 
     final double target =
         _getTargetPixels(position, proposedPixels, this.tolerance, velocity);
-    print('p $proposedPixels, $target');
+    //print('p $proposedPixels, $target');
     if ((target - proposedPixels).abs() > precisionErrorTolerance) {
       if (simulation is BouncingScrollSimulation) {
         return BouncingScrollSimulation(
